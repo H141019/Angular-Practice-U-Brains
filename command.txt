@@ -1,0 +1,11 @@
+touch.gitignore
+git config --global user.name Harshit
+git config --global user.email rusiaharshit4@gamil.com
+git init
+git add . 
+git commit -m "Intial Commit"
+git status # Just to see
+ssh-keygen -t ed25519 -C "rusiaharshit4@gmail.com"
+tail <path to id_rsa.pub> # add this key to Github account
+git remote add origin <ssh url.git>
+git push orgin master
