@@ -1,0 +1,17 @@
+<section class="mt-3">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-3">
+            <div class="card shadow">
+                <img [src]="tourImages" alt="">      <!-- 2. property Binding /attribute Binding [] in this dynamic Binding like - class,img--> 
+                <div class="card-body">
+                    <p class="h3">{{tourName}}</p>  <!-- Data Binding-->
+                    <p>{{getDate()}}</p>            <!-- 1. Interpolation / Angular Expression : {{}} -->
+                    <!-- <h3>{{getTime()}}</h3> -->
+                    <h3>{{time}}</h3>
+                </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</section>

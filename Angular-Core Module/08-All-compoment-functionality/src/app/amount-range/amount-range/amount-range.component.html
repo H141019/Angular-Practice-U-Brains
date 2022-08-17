@@ -1,0 +1,24 @@
+<div class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <p class="h4">Amount Range</p>
+                    </div>
+                    <div class="card-body bg-light">
+                        <form>
+                            <!-- this is use like HDFC EMI loan we see in that website -->
+                            <label>Amount : </label>
+                            <input 
+                                name="amount"
+                                [(ngModel)]="amount"
+                                type="range" class="form-range" min="5000" max="500000">
+                        </form>
+                        <p>{{amount | currency: 'INR'}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
